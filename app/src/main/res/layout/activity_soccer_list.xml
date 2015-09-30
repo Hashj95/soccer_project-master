@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoccerList"
+    android:background="#6be031"
+    android:weightSum="1"
+    android:baselineAligned="true">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/creatorTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#bcbcbc">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="#003602">
+
+                        <Space
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.08" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="109dp"
+                            android:id="@+id/imageView"
+                            android:src="@mipmap/soccer_ball"
+                            android:layout_weight="0.08"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Soccer App"
+                            android:id="@+id/textView"
+                            android:layout_weight="0.08"
+                            android:textSize="80dp"
+                            android:typeface="serif"
+                            android:textColor="#ffffff" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="109dp"
+                            android:id="@+id/imageView2"
+                            android:src="@mipmap/soccer_ball"
+                            android:layout_weight="0.08" />
+
+                        <Space
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.08" />
+
+                        <AnalogClock
+                            android:layout_width="106dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/analogClock" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="CREATE A NEW TEAM"
+                        android:id="@+id/textView2"
+                        android:textColor="#010101"
+                        android:textStyle="bold"
+                        android:textSize="35dp"
+                        android:typeface="serif"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+                        <Button
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:text="Add Team"
+                            android:id="@+id/addTeamButton"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            />
+
+                        <Button
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:text="Details"
+                            android:id="@+id/detailButton"
+                            android:layout_gravity="right"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Team Name"
+                            android:id="@+id/textView3"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teamNameField" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Year Established"
+                            android:id="@+id/textView4"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/establishedField"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Space
+                            android:layout_width="20px"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Manager Name"
+                            android:id="@+id/textView5"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/managerNameField" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20px" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teamStoreTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="::TEAMS::"
+                        android:id="@+id/textView6"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textSize="35dp" />
+
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
